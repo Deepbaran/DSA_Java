@@ -57,7 +57,7 @@ public class HasPath {
 		int n = sc.nextInt(); // number of vertices [0...n-1]
 	    int e = sc.nextInt(); // number of edges
 	    // Creating the adjacency matrix
-	    int[][] edges = new int[n][];
+	    int[][] edges = new int[n][n];
 	    // Filling the adjacency matrix with proper edges
 	    for(int i = 0; i < e; i++) {
 	        int f = sc.nextInt(), s = sc.nextInt(); // first and second vertices

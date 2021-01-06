@@ -50,7 +50,7 @@ public class GetPath_DFS {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int V = sc.nextInt(), E = sc.nextInt(), tempX, tempY;
-			int[][] edges = new int[V][];
+			int[][] edges = new int[V][V];
 		    for(int i = 0; i < E; i++) {
 		        tempX = sc.nextInt();
 		        tempY = sc.nextInt();

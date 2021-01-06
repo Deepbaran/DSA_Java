@@ -16,7 +16,6 @@ public class GetPath_BFS {
 	private static boolean print_BFS(int[][] edges, int n, int sv, int ev, boolean[] visited, HashMap<Integer, Integer> hm) {
 	    // It is similar to level order traversal in tree
 	    Queue<Integer> pendingVertices = new LinkedList<>();
-	    hm.put(sv,  sv);
 	    pendingVertices.add(sv);
 	    visited[sv] = true;
 	    while(!pendingVertices.isEmpty()) {
@@ -52,7 +51,7 @@ public class GetPath_BFS {
 		int n = sc.nextInt(); // number of vertices [0...n-1]
 	    int e = sc.nextInt(); // number of edges
 	    // Creating the adjacency matrix
-	    int[][] edges = new int[n][];
+	    int[][] edges = new int[n][n];
 	    // Filling the adjacency matrix with proper edges
 	    for(int i = 0; i < e; i++) {
 	        int f = sc.nextInt(), s = sc.nextInt(); // first and second vertices
@@ -69,7 +68,7 @@ public class GetPath_BFS {
 	            System.out.print(i + " ");
 	            i = hm.get(i);
 	        }
-	        System.out.println(v2);;
+	        System.out.println(v1);;
 	    }
 	}
 

@@ -8,7 +8,7 @@ public class Prims_Algorithm {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 	    int e = sc.nextInt();
-	    int[][] edges = new int[n][];
+	    int[][] edges = new int[n][n];
 
 	    for(int i = 0; i < e; i++) {
 	        int f = sc.nextInt(), s = sc.nextInt(), weight = sc.nextInt();
