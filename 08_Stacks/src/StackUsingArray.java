@@ -25,7 +25,7 @@ public class StackUsingArray {
 	public int top() throws StackEmptyException { // O(1)
 		if(size() == 0) {
 			// StackEmptyException
-			StackEmptyException e = new StackEmptyException();
+			StackEmptyException e = new StackEmptyException("Stack is Empty!!!");
 			throw e;
 		}
 		return data[top];
