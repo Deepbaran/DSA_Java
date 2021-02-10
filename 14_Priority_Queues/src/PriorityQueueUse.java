@@ -78,3 +78,11 @@ public class PriorityQueueUse {
 		}
 	}
 }
+
+/*
+ * Min Heap: 
+ * Queue<Integer> PQ = new PriorityQueue<>();
+ * 
+ * Max Heap:
+ * Queue<Integer> PQ = new PriorityQueue<>((x,y) -> Integer.compare(y, x)); // Integer.compare(y, x) => -1/0 -> Don't Swap || 1 -> Swap
+ */

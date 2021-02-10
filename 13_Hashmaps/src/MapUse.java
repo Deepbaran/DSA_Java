@@ -62,6 +62,15 @@ public class MapUse {
 		}
 		System.out.println();
 
+		HashMap<Integer, Integer> hm = new HashMap<>();
+		int[] a = {1,1,2,5,6,2,7,3,10,95};
+		for(int i=0;i<a.length;i++) {
+			hm.put(a[i], hm.getOrDefault(a[i], 0) + 1);
+		}
+		System.out.println();
+		for(int key: hm.keySet()) {
+			System.out.println(key + ": " + hm.get(key));
+		}
 	}
 
 }
